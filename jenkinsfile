@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout SCM') {
+            steps {
+                echo 'checkoutscm'
+            }
+        }
+        stage('install') {
+            steps {
+                echo 'Install project dependencies'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Test project Code'
+            }
+        }
+         stage('BUild') {
+            steps {
+                echo 'Build project app'
+            }
+        }
+         stage('Deploy') {
+            steps {
+                echo 'Deploy project Code'
+            }
+        }
